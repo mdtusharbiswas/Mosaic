@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .single-project-img img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .project-hover-box {
+            background-color: black;
+            top: 50%;
+            left: -20px;
+            padding: 15px;
+            color: white;
+            position: absolute;
+            z-index: 11;
+            opacity: 0;
+            visibility: hidden;
+            transition: .4s;
+
+        }
+
+        .single-project:hover .project-hover-box {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .single-project {
+            position: relative;
+        }
+
+        .button-group button {
+            border: none;
+            background-color: transparent;
+            margin-right: 30px;
+        }
+
+        .button-group button span {
+            margin-left: 20px;
+        }
+
+        .button-group button:focus {
+            outline: 0;
+            color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="project-area">
+        <div class="container">
+            <h1>Masonry Three Column</h1>
+            <div class="button-group filter-button-group pt-5 pb-5">
+                <button data-filter="*">show all <span>/</span></button>
+                <button data-filter=".metal">metal <span>/</span></button>
+                <button data-filter=".transition">transition <span>/</span></button>
+            </div>
+
+            <div class="row main">
+                <div class="col-md-4 projects metal">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/flyer-min-600x500.jpg" alt="">
+                        </div>
+                        <div class="project-hover-box">
+                            <h3>Lightbox project</h3>
+                            <p>Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/cosmetic-min-600x650.jpg" alt="">
+                        </div>
+                        <div class="project-hover-box">
+                            <h3>Lightbox project</h3>
+                            <p>Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects transition">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/catalogue-600x500.jpg" alt="">
+                        </div>
+                        <div class="project-hover-box">
+                            <h3>Lightbox project</h3>
+                            <p>Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects transition">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/jar-600x500.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/wristband-min-600x350.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects transition">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/cardboard-min-1-600x500.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/pillow-min-600x500.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/business-card-min-600x500.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects metal">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/headphone-min.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/flyer-min-600x500.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/cosmetic-min-600x650.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 projects metal">
+                    <div class="single-project">
+                        <div class="single-project-img">
+                            <img src="assets/img/catalogue-600x500.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/all-active.js"></script>
+</body>
+
+</html>
